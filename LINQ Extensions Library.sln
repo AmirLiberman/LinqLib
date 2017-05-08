@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FDEAD4D3-FB77-4720-B346-48B7592CDC1D}"
+	ProjectSection(SolutionItems) = preProject
+		LINQ Extensions Library.vsmdi = LINQ Extensions Library.vsmdi
+		tests\Local.testsettings = tests\Local.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqLib", "src\LinqLib\LinqLib.csproj", "{5666D5D2-A992-40CC-9A98-E5525ECC59BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqLibTests", "tests\LinqLibTests\LinqLibTests.csproj", "{940809DF-24AA-455C-8DC4-C2858B6E5E44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqLibExamples", "samples\LinqLibExamples\LinqLibExamples.csproj", "{4F52FC98-109C-422A-8712-2D347269E962}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestPad", "tests\TestPad\TestPad.csproj", "{28350C39-18B9-4CF0-AE48-0F9A9037BF93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortTester", "tests\SortTester\SortTester.csproj", "{A15F50AD-B6BA-40F8-9DA9-28759D47CB48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5666D5D2-A992-40CC-9A98-E5525ECC59BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5666D5D2-A992-40CC-9A98-E5525ECC59BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5666D5D2-A992-40CC-9A98-E5525ECC59BE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5666D5D2-A992-40CC-9A98-E5525ECC59BE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5666D5D2-A992-40CC-9A98-E5525ECC59BE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5666D5D2-A992-40CC-9A98-E5525ECC59BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5666D5D2-A992-40CC-9A98-E5525ECC59BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5666D5D2-A992-40CC-9A98-E5525ECC59BE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5666D5D2-A992-40CC-9A98-E5525ECC59BE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5666D5D2-A992-40CC-9A98-E5525ECC59BE}.Release|x86.ActiveCfg = Release|Any CPU
+		{940809DF-24AA-455C-8DC4-C2858B6E5E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{940809DF-24AA-455C-8DC4-C2858B6E5E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{940809DF-24AA-455C-8DC4-C2858B6E5E44}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{940809DF-24AA-455C-8DC4-C2858B6E5E44}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{940809DF-24AA-455C-8DC4-C2858B6E5E44}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{940809DF-24AA-455C-8DC4-C2858B6E5E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{940809DF-24AA-455C-8DC4-C2858B6E5E44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{940809DF-24AA-455C-8DC4-C2858B6E5E44}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{940809DF-24AA-455C-8DC4-C2858B6E5E44}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{940809DF-24AA-455C-8DC4-C2858B6E5E44}.Release|x86.ActiveCfg = Release|Any CPU
+		{4F52FC98-109C-422A-8712-2D347269E962}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F52FC98-109C-422A-8712-2D347269E962}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F52FC98-109C-422A-8712-2D347269E962}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4F52FC98-109C-422A-8712-2D347269E962}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4F52FC98-109C-422A-8712-2D347269E962}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4F52FC98-109C-422A-8712-2D347269E962}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F52FC98-109C-422A-8712-2D347269E962}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F52FC98-109C-422A-8712-2D347269E962}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4F52FC98-109C-422A-8712-2D347269E962}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4F52FC98-109C-422A-8712-2D347269E962}.Release|x86.ActiveCfg = Release|Any CPU
+		{28350C39-18B9-4CF0-AE48-0F9A9037BF93}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{28350C39-18B9-4CF0-AE48-0F9A9037BF93}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{28350C39-18B9-4CF0-AE48-0F9A9037BF93}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{28350C39-18B9-4CF0-AE48-0F9A9037BF93}.Debug|x86.ActiveCfg = Debug|x86
+		{28350C39-18B9-4CF0-AE48-0F9A9037BF93}.Debug|x86.Build.0 = Debug|x86
+		{28350C39-18B9-4CF0-AE48-0F9A9037BF93}.Release|Any CPU.ActiveCfg = Release|x86
+		{28350C39-18B9-4CF0-AE48-0F9A9037BF93}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{28350C39-18B9-4CF0-AE48-0F9A9037BF93}.Release|Mixed Platforms.Build.0 = Release|x86
+		{28350C39-18B9-4CF0-AE48-0F9A9037BF93}.Release|x86.ActiveCfg = Release|x86
+		{28350C39-18B9-4CF0-AE48-0F9A9037BF93}.Release|x86.Build.0 = Release|x86
+		{A15F50AD-B6BA-40F8-9DA9-28759D47CB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15F50AD-B6BA-40F8-9DA9-28759D47CB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15F50AD-B6BA-40F8-9DA9-28759D47CB48}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A15F50AD-B6BA-40F8-9DA9-28759D47CB48}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A15F50AD-B6BA-40F8-9DA9-28759D47CB48}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A15F50AD-B6BA-40F8-9DA9-28759D47CB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15F50AD-B6BA-40F8-9DA9-28759D47CB48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15F50AD-B6BA-40F8-9DA9-28759D47CB48}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A15F50AD-B6BA-40F8-9DA9-28759D47CB48}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A15F50AD-B6BA-40F8-9DA9-28759D47CB48}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = LINQ Extensions Library.vsmdi
+	EndGlobalSection
+EndGlobal

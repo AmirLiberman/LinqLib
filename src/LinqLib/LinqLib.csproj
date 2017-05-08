@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5666D5D2-A992-40CC-9A98-E5525ECC59BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LinqLib</RootNamespace>
+    <AssemblyName>LinqLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;KEEP_TEMP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisIgnoreGeneratedCode>true</CodeAnalysisIgnoreGeneratedCode>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <BaseAddress>170807296</BaseAddress>
+    <DocumentationFile>bin\Debug\LinqLib.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\LinqLib.XML</DocumentationFile>
+    <BaseAddress>2050621440</BaseAddress>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>LinqLib.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Array\ArrayExtensions.cs" />
+    <Compile Include="Error.cs" />
+    <Compile Include="Sequence\Combinatorics.cs" />
+    <Compile Include="Array\FlipAxis.cs" />
+    <Compile Include="Array\SingleComparer.cs" />
+    <Compile Include="Array\DoubleComparer.cs" />
+    <Compile Include="Array\RotateAxis.cs" />
+    <Compile Include="DynamicCodeGenerator\DynamicClassGenerator.cs" />
+    <Compile Include="DynamicCodeGenerator\ClassGenerationEventArgs.cs" />
+    <Compile Include="DynamicCodeGenerator\IDynamicPivotObject.cs" />
+    <Compile Include="Operators\Action.cs" />
+    <Compile Include="Operators\Gates.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sequence\AlignResult.cs" />
+    <Compile Include="Sequence\AlignType.cs" />
+    <Compile Include="Sequence\Analysis.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Sequence\AverageMatchType.cs" />
+    <Compile Include="Sequence\Enumerator.cs" />
+    <Compile Include="Sequence\ItemCounter.cs" />
+    <Compile Include="Sequence\MatchResult.cs" />
+    <Compile Include="Sequence\NoiseFilterType.cs" />
+    <Compile Include="Operators\Arithmetic.cs" />
+    <Compile Include="Sequence\Transformer.cs" />
+    <Compile Include="Sequence\Scrub.cs" />
+    <Compile Include="Sequence\SpecialSets.cs" />
+    <Compile Include="Operators\Statistical.cs" />
+    <Compile Include="Sequence\Subset.cs" />
+    <Compile Include="Sequence\SequenceRelationType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimpleEqualityComparer.cs" />
+    <Compile Include="Sort\ComposableSortEnumerable.cs" />
+    <Compile Include="Sort\ComposableSorter.cs" />
+    <Compile Include="Sort\Sorters\BubbleSort.cs" />
+    <Compile Include="Sort\Sorters\SelectSort.cs" />
+    <Compile Include="Sort\Sorters\ShellSort.cs" />
+    <Compile Include="Sort\Sorters\InsertSort.cs" />
+    <Compile Include="Sort\Sorters\MergeSort.cs" />
+    <Compile Include="Sort\Sorters\HeapSort.cs" />
+    <Compile Include="Sort\IComposableSortEnumerable.cs" />
+    <Compile Include="Sort\Sorters\ISort.cs" />
+    <Compile Include="Sort\MapItem.cs" />
+    <Compile Include="Sort\Sorters\QuickSort.cs" />
+    <Compile Include="Sort\Sorters\Sort.cs" />
+    <Compile Include="Sort\SortFunctions.cs" />
+    <Compile Include="Sort\SortType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="CustomDictionary.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LinqLib.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
