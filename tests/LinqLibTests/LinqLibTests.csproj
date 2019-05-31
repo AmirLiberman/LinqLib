@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{940809DF-24AA-455C-8DC4-C2858B6E5E44}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LinqLibTests</RootNamespace>
+    <AssemblyName>LinqLibTests</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Array\ArrayExtensionsTests.cs" />
+    <Compile Include="Array\ArrayReader.cs" />
+    <Compile Include="Operators\Arithmetic.cs" />
+    <Compile Include="Operators\Action.cs" />
+    <Compile Include="Operators\Logical.cs" />
+    <Compile Include="Operators\Statistical\CumulativeMovingAverage.cs" />
+    <Compile Include="Operators\Statistical\FrequencyProbability.cs" />
+    <Compile Include="Operators\Statistical\MovingSum.cs" />
+    <Compile Include="Operators\Statistical\StandardMovingAvrage.cs" />
+    <Compile Include="Operators\Statistical\StdDev.cs" />
+    <Compile Include="Operators\Statistical\StdDevBlock.cs" />
+    <Compile Include="Operators\Statistical\StdDevCumulative.cs" />
+    <Compile Include="Operators\Statistical\Variance.cs" />
+    <Compile Include="Operators\Statistical\WeightedMovingAverage.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sequence\Combinatorics.cs" />
+    <Compile Include="Sequence\Transformer.cs" />
+    <Compile Include="Sequence\Subset.cs" />
+    <Compile Include="Sequence\Scrub.cs" />
+    <Compile Include="HelperClasses\TestComparer.cs" />
+    <Compile Include="Sequence\SpecialSets.cs" />
+    <Compile Include="HelperClasses\Generator.cs" />
+    <Compile Include="HelperClasses\IntWrap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HelperClasses\TestEqualityComparer.cs" />
+    <Compile Include="HelperClasses\TestPet.cs" />
+    <Compile Include="Sequence\Analysis.cs" />
+    <Compile Include="Sequence\Enumerator.cs" />
+    <Compile Include="Sort\DataItem.cs" />
+    <Compile Include="Sort\Sort.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\LinqLib\LinqLib.csproj">
+      <Project>{5666D5D2-A992-40CC-9A98-E5525ECC59BE}</Project>
+      <Name>LinqLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hallelujah1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hallelujah2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ExpectedArrayData.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
